@@ -1,346 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MODA | Tienda de Ropa</title>
-
-    <!-- Conexión con CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>URBAN STYLE | Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- ==================== NAVBAR ==================== -->
-    <header>
-        <nav class="navbar">
+    <header class="encabezado">
+        <a href="#inicio" class="logo">URBAN<span>STYLE.</span></a>
 
-            <a href="#" class="logo">
-                MODA<span>.</span>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#coleccion">Colección</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
-            <a href="#" class="cart">
-                🛒 Carrito
-            </a>
-
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
         </nav>
+
+        <a href="#productos" class="boton-menu">Ver colección ↗</a>
     </header>
 
-
-    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
     <main>
-
-        <!-- HERO -->
         <section class="hero" id="inicio">
-
-            <div class="hero-content">
-
-                <p class="subtitle">
-                    NUEVA COLECCIÓN 2026
-                </p>
-
-                <h1>
-                    Viste tu
-                    <span>personalidad.</span>
-                </h1>
-
-                <p>
-                    Descubre nuestra nueva colección de ropa diseñada
-                    para quienes buscan estilo, comodidad y autenticidad.
-                </p>
-
-                <a href="#coleccion" class="btn">
-                    VER COLECCIÓN
+            <div class="hero-texto">
+                <span class="etiqueta">NUEVA COLECCIÓN 2026</span>
+                <h1>Viste como eres.<br>Destaca por <span>tu estilo.</span></h1>
+                <p>Descubre prendas modernas, cómodas y diseñadas
+                   para expresar tu personalidad todos los días.</p>
+                <a href="#productos" class="boton-principal">
+                    Explorar colección →
                 </a>
-
+                <div class="datos">
+                    <div><strong>+120</strong><small>Productos</small></div>
+                    <div><strong>100%</strong><small>Estilo urbano</small></div>
+                    <div><strong>2026</strong><small>Nueva temporada</small></div>
+                </div>
             </div>
 
-
-            <div class="hero-image">
-
+            <div class="hero-imagen">
                 <img
-                    src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
-                    alt="Nueva colección de ropa"
-                >
-
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Modelo con ropa de estilo urbano">
+                <div class="tarjeta-flotante">
+                    <span>✦ TENDENCIA</span>
+                    <strong>Tu estilo, tus reglas.</strong>
+                </div>
             </div>
-
         </section>
 
-
-        <!-- ==================== CATEGORÍAS ==================== -->
-        <section class="categories">
-
-            <div class="category">
-                <h3>Mujer</h3>
-                <a href="#coleccion">
-                    Ver productos →
-                </a>
+        <section class="productos" id="productos">
+            <div class="seccion-titulo">
+                <div>
+                    <span class="etiqueta">SELECCIÓN EXCLUSIVA</span>
+                    <h2>Los favoritos</h2>
+                </div>
+                <p>Prendas que hablan por ti.</p>
             </div>
 
-            <div class="category">
-                <h3>Hombre</h3>
-                <a href="#coleccion">
-                    Ver productos →
-                </a>
-            </div>
+            <div class="rejilla-productos">
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">MÁS VENDIDO</span>
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85"
+                             alt="Camiseta básica">
+                    </div>
+                    <div class="producto-info">
+                        <div><h3>Camiseta Essential</h3><p>Básicos urbanos</p></div>
+                        <strong>$25.00</strong>
+                    </div>
+                    <a href="#contacto" class="boton-producto">Consultar producto ↗</a>
+                </article>
 
-            <div class="category">
-                <h3>Accesorios</h3>
-                <a href="#coleccion">
-                    Ver productos →
-                </a>
-            </div>
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">NUEVO</span>
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=85"
+                             alt="Pantalón de mezclilla">
+                    </div>
+                    <div class="producto-info">
+                        <div><h3>Jeans Classic</h3><p>Estilo casual</p></div>
+                        <strong>$45.00</strong>
+                    </div>
+                    <a href="#contacto" class="boton-producto">Consultar producto ↗</a>
+                </article>
 
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=85"
+                             alt="Chaqueta de moda">
+                    </div>
+                    <div class="producto-info">
+                        <div><h3>Chaqueta Urban</h3><p>Streetwear</p></div>
+                        <strong>$68.00</strong>
+                    </div>
+                    <a href="#contacto" class="boton-producto">Consultar producto ↗</a>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">OFERTA</span>
+                        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85"
+                             alt="Camisa moderna">
+                    </div>
+                    <div class="producto-info">
+                        <div><h3>Camisa Minimal</h3><p>Elegancia casual</p></div>
+                        <strong>$35.00</strong>
+                    </div>
+                    <a href="#contacto" class="boton-producto">Consultar producto ↗</a>
+                </article>
+            </div>
         </section>
 
-
-        <!-- ==================== PRODUCTOS ==================== -->
-        <section class="products" id="coleccion">
-
-            <div class="section-title">
-
-                <p>NUESTROS FAVORITOS</p>
-
-                <h2>
-                    Productos destacados
-                </h2>
-
-            </div>
-
-
-            <div class="product-grid">
-
-                <!-- PRODUCTO 1 -->
-                <article class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="tag">
-                            NUEVO
-                        </span>
-
-                        <img
-                            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80"
-                            alt="Chaqueta beige"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Chaqueta Essential
-                        </h3>
-
-                        <p>
-                            Chaqueta casual
-                        </p>
-
-                        <strong>
-                            $59.99
-                        </strong>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCTO 2 -->
-                <article class="product-card">
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80"
-                            alt="Vestido elegante"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Vestido Minimal
-                        </h3>
-
-                        <p>
-                            Vestido elegante
-                        </p>
-
-                        <strong>
-                            $69.99
-                        </strong>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCTO 3 -->
-                <article class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="tag sale">
-                            -20%
-                        </span>
-
-                        <img
-                            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
-                            alt="Conjunto de moda"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Urban Style
-                        </h3>
-
-                        <p>
-                            Conjunto urbano
-                        </p>
-
-                        <strong>
-                            $47.99
-                        </strong>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCTO 4 -->
-                <article class="product-card">
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80"
-                            alt="Camisa blanca"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Camisa Classic
-                        </h3>
-
-                        <p>
-                            Camisa básica
-                        </p>
-
-                        <strong>
-                            $39.99
-                        </strong>
-
-                        <button>
-                            Agregar al carrito
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
+        <section class="nosotros" id="nosotros">
+            <span class="etiqueta">MÁS QUE ROPA</span>
+            <h2>Tu identidad comienza<br>con lo que vistes.</h2>
+            <p>En URBAN STYLE creemos que cada persona tiene
+               una forma única de expresarse. Encuentra prendas
+               que combinan comodidad, calidad y personalidad.</p>
+            <a href="#productos" class="boton-principal">Descubre tu estilo →</a>
         </section>
 
-
-        <!-- ==================== BANNER ==================== -->
-        <section class="banner">
-
+        <section class="contacto" id="contacto">
             <div>
-
-                <p>
-                    ESTILO QUE TE REPRESENTA
-                </p>
-
-                <h2>
-                    Hasta 30% de descuento
-                </h2>
-
-                <a href="#coleccion" class="btn btn-light">
-                    COMPRAR AHORA
-                </a>
-
+                <span class="etiqueta">¿TIENES PREGUNTAS?</span>
+                <h2>Hablemos de tu próximo look.</h2>
+                <p>Consulta disponibilidad, tallas y pedidos.</p>
             </div>
-
+            <a href="https://wa.me/593999999999" target="_blank"
+               rel="noopener noreferrer" class="boton-principal">
+                Contactar por WhatsApp ↗
+            </a>
         </section>
-
-
-        <!-- ==================== NOSOTROS ==================== -->
-        <section class="about" id="nosotros">
-
-            <div class="about-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80"
-                    alt="Tienda de ropa"
-                >
-
-            </div>
-
-
-            <div class="about-content">
-
-                <p class="subtitle">
-                    SOBRE NOSOTROS
-                </p>
-
-                <h2>
-                    Moda sencilla.
-                    <br>
-                    Estilo auténtico.
-                </h2>
-
-                <p>
-                    En MODA creemos que la ropa es una forma de expresar
-                    quién eres. Creamos prendas modernas, cómodas y
-                    versátiles para acompañarte todos los días.
-                </p>
-
-                <a href="#contacto" class="text-link">
-                    Conoce más →
-                </a>
-
-            </div>
-
-        </section>
-
     </main>
 
+    <footer>
+        <a href="#inicio" class="logo">URBAN<span>STYLE.</span></a>
+        <p>© 2026 URBAN STYLE. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+    </footer>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer id="contacto">
-
-        <div class="footer-content">
-
-            <div>
-
-                <a href="#" class="logo">
-                    MOD
+</body>
+</html>
